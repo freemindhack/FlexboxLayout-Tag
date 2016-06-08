@@ -12,19 +12,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <com.zhy.flexboxlayout.tag.TagFlowLayout
+    <layout.flow.TagFlowLayout
         android:id="@+id/id_tagFlowLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-    ></com.zhy.flexboxlayout.tag.TagFlowLayout>
+    ></layout.flow.TagFlowLayout>
 
-    <com.google.android.flexbox.FlexboxLayout
+    <layout.flow.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:justifyContent="center"
-        app:flexDirection="row"
-        app:flexWrap="wrap">
+        >
         <TextView
             style="@style/text_flag_01"
             android:text="Welcome" />
@@ -86,7 +84,7 @@
 
 
 
-    </com.google.android.flexbox.FlexboxLayout>
+    </layout.flow.FlowLayout>
 
 
 </LinearLayout>

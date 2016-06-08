@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import layout.flow.TagAdapter;
+import layout.flow.TagFlowLayout;
+
 public class MainActivity extends AppCompatActivity
 {
     TagFlowLayout tagFlowLayout;
