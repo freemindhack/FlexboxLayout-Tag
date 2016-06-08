@@ -7,16 +7,13 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.flexbox.FlexboxLayout;
-
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by zhy on 16/5/16.
  */
-public class TagFlowLayout extends FlexboxLayout implements TagAdapter.OnAdapterDataChanged
+public class TagFlowLayout extends FlowLayout implements TagAdapter.OnAdapterDataChanged
 {
     private TagAdapter mAdapter;
     /**
@@ -31,27 +28,21 @@ public class TagFlowLayout extends FlexboxLayout implements TagAdapter.OnAdapter
     public TagFlowLayout(Context context)
     {
         super(context);
-        init();
+
     }
 
     public TagFlowLayout(Context context, AttributeSet attrs)
     {
         super(context, attrs);
-        init();
+
     }
 
     public TagFlowLayout(Context context, AttributeSet attrs, int defStyleAttr)
     {
         super(context, attrs, defStyleAttr);
-        init();
-    }
-
-    private void init()
-    {
-        setFlexDirection(FlexboxLayout.FLEX_DIRECTION_ROW);
-        setFlexWrap(FLEX_WRAP_WRAP);
 
     }
+
 
     public void setCheckable(boolean isCheckable)
     {
